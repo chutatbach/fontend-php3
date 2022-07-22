@@ -1,0 +1,29 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center-x{
+    display: flex;
+    align-items: center;
+}
+@mixin flex-center-y{
+    display: flex;
+    justify-content: center;
+}
+@mixin grid-card{
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    gap: 2rem;
+}
+
+//layout
+@mixin nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin: 0 50px;
+    max-height: 6rem;
+}
+

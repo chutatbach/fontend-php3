@@ -1,0 +1,32 @@
+@mixin font($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin font-bg-main {
+    @include font(1rem, 600, $color-main);
+}
+
+@mixin font-bg-btn {
+    @include font(1rem, 600, $color-sp);
+}
+
+@mixin font-1 {
+    @include font(16px,500,$color-main)
+}
+
+@mixin font-title-1 {
+    @include font(42px,700,$color-main)
+}
+@mixin font-title-2 {
+    @include font(24px,700,$color-main)
+}
+@mixin font-title-3 {
+    @include font(20px,600,$color-main)
+}
+
+
+@mixin font-menu {
+    @include font(18px,600,$color-main)
+}
