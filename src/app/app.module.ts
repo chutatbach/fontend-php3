@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { PagesErrorComponent } from './pages-error/pages-error.component';
 import { Error404Component } from './pages-error/error404/error404.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { LoaderComponent } from './layout/loader/loader.component';
 
 
 @NgModule({
@@ -38,13 +40,15 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
     CartComponent,
     PagesErrorComponent,
     Error404Component,
-    CheckoutComponent
+    CheckoutComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AccordionModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

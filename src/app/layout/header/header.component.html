@@ -1,3 +1,37 @@
+<div class="overlay" [ngStyle]="overlay">
+  <div class="" style="width: 50%;">
+   <div class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-danger" (click)="close()">close</button>
+   </div>
+    <div class="list-search">
+      <table class="table">
+        <tr>
+          <th><img src="assets/images/product_1.png" width="100px" alt=""></th>
+          <th>
+            <span>free shipping on all u.s orders over</span>
+            <span>$50</span>
+          </th>
+        </tr>
+        <tr>
+          <th><img src="assets/images/product_1.png" width="100px" alt=""></th>
+          <th>
+            <span>free shipping on all u.s orders over</span>
+            <span>$50</span>
+          </th>
+        </tr>
+        <tr>
+          <th><img src="assets/images/product_1.png" width="100px" alt=""></th>
+          <th>
+            <span>free shipping on all u.s orders over</span>
+            <span>$50</span>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
 <!-- Header -->
 
 <header class="header trans_300">
@@ -10,7 +44,7 @@
         <div class="col-md-6">
           <div class="top_nav_left">free shipping on all u.s orders over $50</div>
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-md-6">
           <div class="top_nav_right">
             <ul class="top_nav_menu">
 
@@ -73,11 +107,11 @@
               <li><a [routerLink]="['detail']">deail product</a></li>
               <li><a [routerLink]="['error']">pages 404</a></li>
               <li><a [routerLink]="['checkout']">checkout</a></li>
-              <li><a [routerLink]="">contact</a></li>
+              <li><a [routerLink]="['contact']">contact</a></li>
             </ul>
             <ul class="navbar_user">
-              <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+              <li><a (click)="search()"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+              <li><a ><i class="fa fa-user" aria-hidden="true"></i></a></li>
               <li class="checkout">
                 <a [routerLink]="['cart']">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>

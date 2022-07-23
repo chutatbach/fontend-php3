@@ -283,11 +283,6 @@
 /*********************************
 6. Sidebar
 *********************************/
-
-.product_section_container
-{
-	margin-top: 150px;
-}
 .product_section
 {
 
@@ -484,6 +479,7 @@
 	margin-top: 57px;
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
+	grid-gap: 50px ;
 }
 .product-item
 {
